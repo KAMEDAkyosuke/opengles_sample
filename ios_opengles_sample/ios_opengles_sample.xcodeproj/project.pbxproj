@@ -14,6 +14,8 @@
 		0C0778EA1961E22E00330914 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0778E91961E22E00330914 /* main.m */; };
 		0C0778EE1961E22E00330914 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0778ED1961E22E00330914 /* AppDelegate.m */; };
 		0C0778F01961E22E00330914 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0778EF1961E22E00330914 /* Images.xcassets */; };
+		0C2E8C5B1962B4F700C7116D /* pass2_vertex_shader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E8C5A1962B4F700C7116D /* pass2_vertex_shader.glsl */; };
+		0C2E8C5D1962B50900C7116D /* pass2_fragment_shader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E8C5C1962B50900C7116D /* pass2_fragment_shader.glsl */; };
 		0C3C7372195FF19A00C16979 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4A966F195EA9A600CD1C9A /* Foundation.framework */; };
 		0C3C7373195FF19A00C16979 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4A9671195EA9A600CD1C9A /* CoreGraphics.framework */; };
 		0C3C7374195FF19A00C16979 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4A9673195EA9A600CD1C9A /* UIKit.framework */; };
@@ -120,6 +122,8 @@
 		0C0778EC1961E22E00330914 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0C0778ED1961E22E00330914 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0C0778EF1961E22E00330914 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0C2E8C5A1962B4F700C7116D /* pass2_vertex_shader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pass2_vertex_shader.glsl; sourceTree = "<group>"; };
+		0C2E8C5C1962B50900C7116D /* pass2_fragment_shader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pass2_fragment_shader.glsl; sourceTree = "<group>"; };
 		0C3C7371195FF19A00C16979 /* 01_square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 01_square.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3C7377195FF19A00C16979 /* 01_square-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "01_square-Info.plist"; sourceTree = "<group>"; };
 		0C3C7379195FF19A00C16979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -661,6 +665,8 @@
 				0C7C75A2196257F9007BA262 /* pass0_fragment_shader.glsl */,
 				0C7C75A5196257F9007BA262 /* pass1_vertex_shader.glsl */,
 				0C7C75A4196257F9007BA262 /* pass1_fragment_shader.glsl */,
+				0C2E8C5A1962B4F700C7116D /* pass2_vertex_shader.glsl */,
+				0C2E8C5C1962B50900C7116D /* pass2_fragment_shader.glsl */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -974,8 +980,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0778E81961E22E00330914 /* InfoPlist.strings in Resources */,
+				0C2E8C5B1962B4F700C7116D /* pass2_vertex_shader.glsl in Resources */,
 				0C7C75A6196257F9007BA262 /* pass0_fragment_shader.glsl in Resources */,
 				0C7C75A7196257F9007BA262 /* pass0_vertex_shader.glsl in Resources */,
+				0C2E8C5D1962B50900C7116D /* pass2_fragment_shader.glsl in Resources */,
 				0C7C75A9196257F9007BA262 /* pass1_vertex_shader.glsl in Resources */,
 				0C0778F01961E22E00330914 /* Images.xcassets in Resources */,
 				0C7C75A8196257F9007BA262 /* pass1_fragment_shader.glsl in Resources */,
