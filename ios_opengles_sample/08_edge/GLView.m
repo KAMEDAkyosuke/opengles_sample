@@ -431,17 +431,17 @@ static buffers_t pass2_buffers;
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, pass1_buffers.indexbuffer);
         glUseProgram(pass1_buffers.program);
         
-        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClearColor(0, 104.0/255.0, 55.0/255.0, 1.0);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glEnable(GL_DEPTH_TEST);
         glViewport(0, 0, self.frame.size.width, self.frame.size.height);
         
-        glEnableVertexAttribArray(PASS0_ATTRIB_POSITION);
-        glVertexAttribPointer(PASS0_ATTRIB_POSITION, 3, GL_FLOAT, GL_FALSE, sizeof(vertex_t), 0);
-        glEnableVertexAttribArray(PASS0_ATTRIB_COLOR);
-        glVertexAttribPointer(PASS0_ATTRIB_COLOR, 4, GL_FLOAT, GL_FALSE, sizeof(vertex_t), (GLvoid*) (sizeof(float) * 3));
-        glEnableVertexAttribArray(PASS0_ATTRIB_NORMAL);
-        glVertexAttribPointer(PASS0_ATTRIB_NORMAL, 3, GL_FLOAT, GL_FALSE, sizeof(vertex_t), (GLvoid*) (sizeof(float) * 7));
+        glEnableVertexAttribArray(PASS1_ATTRIB_POSITION);
+        glVertexAttribPointer(PASS1_ATTRIB_POSITION, 3, GL_FLOAT, GL_FALSE, sizeof(vertex_t), 0);
+        glEnableVertexAttribArray(PASS1_ATTRIB_COLOR);
+        glVertexAttribPointer(PASS1_ATTRIB_COLOR, 4, GL_FLOAT, GL_FALSE, sizeof(vertex_t), (GLvoid*) (sizeof(float) * 3));
+        glEnableVertexAttribArray(PASS1_ATTRIB_NORMAL);
+        glVertexAttribPointer(PASS1_ATTRIB_NORMAL, 3, GL_FLOAT, GL_FALSE, sizeof(vertex_t), (GLvoid*) (sizeof(float) * 7));
         
         GLKMatrix4 projectionMatrix = GLKMatrix4Identity;
         GLKMatrix4 camera = GLKMatrix4Identity;
